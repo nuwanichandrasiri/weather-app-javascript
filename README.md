@@ -24,8 +24,7 @@ A responsive weather web app built with HTML, CSS, and JavaScript using the Open
 - [OpenWeatherMap API](https://openweathermap.org/api)
 
 ## 📸 Preview
-![LunaSky Preview](lunasky1.png)
+![LunaSky Preview](preview.png)
 
 ## 🚀 Getting Started
 1. Clone the repo
-
