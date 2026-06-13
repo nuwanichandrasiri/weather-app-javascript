@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LunaSky — Your window to the sky</title>
+  <meta name="description" content="Your window to the sky, anytime, anywhere. Live weather, hourly + 5-day forecasts, air quality, and dynamic skies." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <div class="brand-mark glass">☀</div>
+        <div>
+          <h1 class="brand-name">LunaSky</h1>
+          <p class="brand-tag">Your window to the sky, anytime, anywhere.</p>
+        </div>
+      </div>
+      <div class="controls">
+        <div class="units glass">
+          <button id="unit-c" class="active">°C</button>
+          <button id="unit-f">°F</button>
+        </div>
+        <button id="geo-btn" class="icon-btn glass" title="Use my location">📍</button>
+      </div>
+    </header>
+
+    <div class="search glass">
+      <span class="search-icon">🔎</span>
+      <input id="search-input" type="text" placeholder="Search any city…" />
+      <button id="search-btn" class="primary">Search</button>
+    </div>
+
+    <div id="chips" class="chips"></div>
+    <div id="error" class="error glass" hidden></div>
+    <div id="loader" class="loader" hidden>Loading…</div>
+
+    <main id="content" hidden>
+      <section class="hero glass">
+        <div class="hero-left">
+          <div class="loc"><span>📍</span> <span id="loc-name"></span></div>
+          <div class="temp-row">
+            <span id="temp" class="temp"></span>
+            <span id="temp-unit" class="temp-unit">°C</span>
+          </div>
+          <p id="desc" class="desc"></p>
+          <p id="meta" class="meta"></p>
+        </div>
+        <div class="hero-right">
+          <img id="hero-icon" alt="" width="128" height="128" />
+          <button id="fav-btn" class="chip glass">♡ Save</button>
+        </div>
+      </section>
+
+      <section class="card glass">
+        <h2 class="card-title">Next 24 hours</h2>
+        <div id="hourly" class="hourly"></div>
+      </section>
+
+      <section class="card glass">
+        <h2 class="card-title">5-day forecast</h2>
+        <ul id="daily" class="daily"></ul>
+      </section>
+
+      <section id="stats" class="stats"></section>
+
+      <footer id="footer" class="footer"></footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
