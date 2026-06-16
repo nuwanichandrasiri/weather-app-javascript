@@ -28,7 +28,6 @@ A responsive weather web app built with HTML, CSS, and JavaScript using the Open
 
 ## 🚀 Getting Started
 1. Clone the repo
-   git clone https://github.com/nuwanichandrasiri/weather-app-javascript.git
 2. Get a free API key from [openweathermap.org](https://openweathermap.org)
 3. Replace the `API_KEY` value in `script.js` with your key
 4. Open `index.html` in your browser
